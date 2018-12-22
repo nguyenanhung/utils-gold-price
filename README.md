@@ -31,8 +31,6 @@ print_r($price->getResponse());
 echo "</pre>";
 ```
 
-
-
 ### Liên hệ
 
 Nếu có bất cứ thông tin nào cần trao đổi và tìm hiểu, vui lòng liên hệ theo thông tin sau
