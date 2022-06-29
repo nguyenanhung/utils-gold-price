@@ -29,14 +29,14 @@ trait RequestTrait
      *
      * @return bool|string
      */
-    public function sendRequest($url = '', $data = [])
+    public function sendRequest($url = '', $data = array())
     {
         $endpoint = is_array($data) && count($data) > 0 ? $url . '?' . http_build_query($data) : $url;
 
         $curl = curl_init();
         curl_setopt_array($curl, array(
             CURLOPT_URL            => $endpoint,
-            CURLOPT_RETURNTRANSFER => TRUE,
+            CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING       => "",
             CURLOPT_MAXREDIRS      => 10,
             CURLOPT_TIMEOUT        => 30,
@@ -44,6 +44,7 @@ trait RequestTrait
             CURLOPT_CUSTOMREQUEST  => "GET",
             CURLOPT_POSTFIELDS     => "",
             CURLOPT_HTTPHEADER     => array(),
+            CURLOPT_SSL_VERIFYPEER => false
         ));
         $response = curl_exec($curl);
         $err      = curl_error($curl);

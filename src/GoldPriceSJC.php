@@ -16,27 +16,29 @@ namespace nguyenanhung\Utils\GoldPrice;
  * @author    713uk13m <dev@nguyenanhung.com>
  * @copyright 713uk13m <dev@nguyenanhung.com>
  */
-class GoldPriceSJC implements GoldPriceInterface
+class GoldPriceSJC
 {
     use RequestTrait, ResponseTrait;
+
     /** @var string Endpoint ExchangeRates */
-    private $endpoint = 'http://www.sjc.com.vn/xml/tygiavang.xml';
+    protected $endpoint = 'https://sjc.com.vn/xml/tygiavang.xml';
     /** @var array|bool Response Data */
-    private $response = NULL;
+    protected $response = null;
 
     /**
      * Function parseDataGoldPrice
      *
-     * @author: 713uk13m <dev@nguyenanhung.com>
-     * @time  : 2018-12-23 03:30
-     *
      * @return $this
+     * @author   : 713uk13m <dev@nguyenanhung.com>
+     * @copyright: 713uk13m <dev@nguyenanhung.com>
+     * @time     : 29/06/2022 51:47
      */
     public function parseDataGoldPrice()
     {
-        $xmlData = NULL;
-        $p       = xml_parser_create();
-        xml_parse_into_struct($p, $this->sendRequest($this->endpoint), $xmlData);
+        $contents = $this->sendRequest($this->endpoint);
+        $xmlData  = null;
+        $p        = xml_parser_create();
+        xml_parse_into_struct($p, $contents, $xmlData);
         xml_parser_free($p);
         $data = array();
         if ($xmlData) {
@@ -46,11 +48,9 @@ class GoldPriceSJC implements GoldPriceInterface
                     $data[] = $value['attributes'];
                 }
             }
-            $this->response = $data;
         }
         $this->response = $data;
 
         return $this;
     }
 }
-

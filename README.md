@@ -8,8 +8,6 @@
 
 Hàm lấy dữ liệu giá vàng từ 1 số website
 
-
-
 #### Giá vàng SJC
 
 Hàm bóc tách dữ liệu từ website SJC: http://sjc.com.vn/price/
@@ -36,7 +34,7 @@ echo "</pre>";
 Nếu có bất cứ thông tin nào cần trao đổi và tìm hiểu, vui lòng liên hệ theo thông tin sau
 
 | Name        | Email                | Skype            | Facebook      |
-| ----------- | -------------------- | ---------------- | ------------- |
+|-------------|----------------------|------------------|---------------|
 | Hung Nguyen | dev@nguyenanhung.com | nguyenanhung5891 | @nguyenanhung |
 
 From Hanoi with Love <3
