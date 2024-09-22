@@ -1,8 +1,8 @@
-[![Latest Stable Version](https://poser.pugx.org/nguyenanhung/utils-gold-price/v/stable)](https://packagist.org/packages/nguyenanhung/utils-gold-price)
-[![Total Downloads](https://poser.pugx.org/nguyenanhung/utils-gold-price/downloads)](https://packagist.org/packages/nguyenanhung/utils-gold-price)
-[![Latest Unstable Version](https://poser.pugx.org/nguyenanhung/utils-gold-price/v/unstable)](https://packagist.org/packages/nguyenanhung/utils-gold-price)
-[![composer.lock](https://poser.pugx.org/nguyenanhung/utils-gold-price/composerlock)](https://packagist.org/packages/nguyenanhung/utils-gold-price)
-[![License](https://poser.pugx.org/nguyenanhung/utils-gold-price/license)](https://packagist.org/packages/nguyenanhung/utils-gold-price)
+[![Latest Stable Version](https://poser.pugx.org/nguyenanhung/utils-gold-price/v/stable.svg)](https://packagist.org/packages/nguyenanhung/utils-gold-price)
+[![Total Downloads](https://poser.pugx.org/nguyenanhung/utils-gold-price/downloads.svg)](https://packagist.org/packages/nguyenanhung/utils-gold-price)
+[![Latest Unstable Version](https://poser.pugx.org/nguyenanhung/utils-gold-price/v/unstable.svg)](https://packagist.org/packages/nguyenanhung/utils-gold-price)
+[![composer.lock](https://poser.pugx.org/nguyenanhung/utils-gold-price/composerlock.svg)](https://packagist.org/packages/nguyenanhung/utils-gold-price)
+[![License](https://poser.pugx.org/nguyenanhung/utils-gold-price/license.svg)](https://packagist.org/packages/nguyenanhung/utils-gold-price)
 
 # Utils: Gold Price
 
